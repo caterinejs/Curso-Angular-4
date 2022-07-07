@@ -1,0 +1,18 @@
+body {
+    background: pink;
+} 
+
+
+.fondoAzul{
+    background: lightblue !important;
+    
+}
+
+.fondoVerde{
+    background: greenyellow !important;
+    
+}
+
+ 
+
+/*hoja de estilo, y se vincula al index html*/
