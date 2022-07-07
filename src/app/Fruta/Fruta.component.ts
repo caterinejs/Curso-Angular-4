@@ -9,7 +9,7 @@ import {Component} from "@angular/core";
 
 export class FrutaComponent{
     public nombre_componente= "Componente de fruta";
-    public listado_frutas;
+    public listado_frutas = "naranja, fresa, banano";
     public nombre:string;
     public edad:number;
     public mayorDeEdad:boolean;
