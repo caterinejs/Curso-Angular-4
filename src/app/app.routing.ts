@@ -5,12 +5,17 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { EmpleadosComponent } from './Empleados/Empleados.component';
 import { FrutaComponent } from './Fruta/Fruta.component';
+import { HomeComponent } from './Home/Home.component';
+import { ContactoComponent } from './Contacto/Contacto.component'
 
 const appRoutes: Routes = [
-    {path: '', component: EmpleadosComponent},
+    {path: '', component: HomeComponent},
     {path: 'empleado', component: EmpleadosComponent},
     {path: 'fruta', component: FrutaComponent},
-    {path: '**', component: EmpleadosComponent }
+    {path: 'pagina principal', component: HomeComponent},
+    {path: 'contacto', component: ContactoComponent},
+    {path: 'contacto/:page', component: ContactoComponent},
+    {path: '**', component: HomeComponent}
 ];
 
 export const appRoutingProviders: any [] = [];

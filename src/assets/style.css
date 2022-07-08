@@ -13,6 +13,11 @@ body {
     
 }
 
+.activado{
+    font-weight: bold;
+    background: yellow;
+}
+
  
 
 /*hoja de estilo, y se vincula al index html*/

@@ -2,7 +2,35 @@
   {{title}}
 </h3>
 <hr>
+<nav>  <!--menu de navegacion-->
+  <a [routerLink]="['/pagina-principal']" [routerLinkActive]="['activado']">
+    Home
+  </a>
+
+  -
+
+  <a [routerLink]="['/fruta']" [routerLinkActive]="['activado']">
+    Fruta
+  </a>
+
+  -
+
+  <a [routerLink]="['/empleado']" [routerLinkActive]="['activado']">
+    Empleados
+  </a>
+
+  -
+
+  <a [routerLink]="['/contacto']" [routerLinkActive]="['activado']">
+    Contacto
+  </a>
+
+</nav>
+
+<hr>
 <!--<fruta></fruta>-->
 <!--<empleados></empleados>-->
+<!--<home></home>-->
+<!--<contacto></contacto>-->
 <router-outlet></router-outlet>
 
