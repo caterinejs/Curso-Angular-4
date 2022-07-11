@@ -1,14 +1,25 @@
-<h1>
-    Componente de Coches
-</h1>
+<h1>Componente de Coches</h1>
+<style> 
+div{
+    float: left;
+}
+form{
+    width:200px;
+}
 
+input[type="text"], span{
+        display:block;
+        width:100%;
+    }
 
-<form #formCoche= "ngForm" (ngSubmit)="onSubmit()">
-<p>
+    </style>
+    <div>  <!--"formCoche.reset();", esta expresion para dejar el formulario vacio-->
+<form #formCoche= "ngForm" (ngSubmit)="onSubmit(); formCoche.reset();">
+ <p>
     <label> Nombre: </label>
     <input type = "text" name ="nombre" #nombre= "ngModel" [(ngModel)]="coche.nombre"required>
     <span *ngIf=" nombre.touched && !nombre.valid">
-        El nombre del coche es incorrecto!!
+        El Nombre del coche es incorrecto!!
     </span>
 </p>
      
@@ -30,6 +41,23 @@
     </span>
 </p>
 
-    <input type= "submit" value = "Guardar">
+    <input type= "submit" value = "Guardar" [disabled]="!formCoche.form.valid">
 
 </form>
+
+<div style="float: lef" >
+    <h4> Listado de coches</h4>
+    <ul>
+        <li *ngFor= "let coche of Coches">
+        {{coche.nombre}} - {{coche.caballaje}} - {{coche.color}} 
+    </li>
+    </ul>
+
+    <h3> Listado de Articulos</h3>
+    <ul *ngIf ="articulos">
+        <li *ngFor= "let articulo of articulos">
+        {{articulo.id}} - {{articulo.title}} - 
+    </li>
+    </ul>
+    <span *ngIf="!articulos"> Cargando Listado ...</span>
+</div>

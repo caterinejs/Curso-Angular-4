@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {RopaService} from '../services/ropa.service';
+import {RopaService} from 'app/Service/ropa.service';
 
 @Component ({
     selector: "Home",
