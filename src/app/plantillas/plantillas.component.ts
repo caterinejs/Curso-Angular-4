@@ -13,7 +13,7 @@ export class PlantillasComponent{
 
 constructor(){
     this.titulo ="Plantillas ngTemplate en Angular";
-    this.administrador = false;
+    this.administrador = true;
 }
 
   cambiar(value){

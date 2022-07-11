@@ -10,6 +10,7 @@ import { EmpleadosComponent} from './Empleados/Empleados.component';
 import { HomeComponent} from './Home/Home.component';
 import { ContactoComponent} from './Contacto/Contacto.component';
 import { CochesComponent} from './coches/coches.component';
+import { PlantillasComponent } from './plantillas/plantillas.component'
 
 import { ConversorPipe} from './pipes/conversor.pipe';
 
@@ -21,7 +22,8 @@ import { ConversorPipe} from './pipes/conversor.pipe';
     HomeComponent,
     ContactoComponent,
     ConversorPipe,
-    CochesComponent
+    CochesComponent,
+    PlantillasComponent
   ],
   imports: [
     BrowserModule,
